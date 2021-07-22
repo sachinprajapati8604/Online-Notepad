@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Notepad</title>
+    <link rel="stylesheet" href="style.css">
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/2.1.2/sweetalert.min.js" integrity="sha512-AA1Bzp5Q0K1KanKKmvN/4d3IRKVlv9PYgwFPvm32nPO6QS8yH1HO7LbgB1pgiOxPtfeg5zEn2ba64MUcqJx6CA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</head>
+
+<body>
+
+    <div class="container" id="container">
+
+        <div class="header">
+            <div id="heading">Online Notepad </div>
+
+            <div class="feature"> AutoSave <input id="feature-flag" onclick="saveNotes()" type="checkbox" name="">
+            </div>
+        </div>
+        <div class="input-box">
+            <textarea rows="5" cols="50" id="textarea" placeholder="Write your notes here"></textarea>
+        </div>
+
+        <div class="btn-box">
+            <input type="button" onclick="saveNotes()" value="Save" />
+            <input type="button" onclick="getNotes()" value="get Notes" />
+            <input type="button" onclick="reset()" value="reset" />
+            <input type="button" onclick="deleteNotes()" value="delete notes" />
+        </div>
+
+        <div id="output-box">
+            <h3 class="output-heading">Previous saved content</h3>
+            <p id="result"></p>
+        </div>
+    </div>
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
