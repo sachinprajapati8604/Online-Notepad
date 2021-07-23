@@ -13,7 +13,20 @@
   margin-bottom: 20px;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
+.night{
+  background-color: #ccc;
+  color: #000;
+ 
+}
 
+#mode-icon{
+  font-size: 1.5rem;
+  background: #fff;
+  color: #00002c;
+  padding: 10px;
+  border-radius: 50%;
+
+}
 .header {
   background-color: #2da44e;
   color: #fff;
@@ -42,6 +55,7 @@
   font-size: 1.5rem;
   color: #00fbcc;
   background-color: #00002c;
+  resize: none;
 }
 
 #textarea:focus {
@@ -100,5 +114,8 @@
   }
   .btn-box input {
     letter-spacing: 0.1em;
+  }
+  #mode-icon{
+    font-size: 0.8rem;
   }
 }
