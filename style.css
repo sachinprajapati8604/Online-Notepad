@@ -3,7 +3,7 @@
   padding: 0;
   box-sizing: border-box;
 }
-::selection{
+::selection {
   background-color: #5c004d;
   color: #fff;
 }
@@ -16,19 +16,17 @@
   margin-bottom: 20px;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
-.night{
+.night {
   background-color: #ccc;
   color: #000;
- 
 }
 
-#mode-icon{
+#mode-icon {
   font-size: 1.5rem;
   background: #fff;
   color: #00002c;
   padding: 10px;
   border-radius: 50%;
-
 }
 .header {
   background-color: #2da44e;
@@ -40,8 +38,7 @@
   position: relative;
 }
 
-
-#feature-flag{
+#feature-flag {
   width: 15px;
   height: 15px;
 }
@@ -127,7 +124,7 @@
   .btn-box input {
     letter-spacing: 0.1em;
   }
-  #mode-icon{
+  #mode-icon {
     font-size: 0.8rem;
   }
 }

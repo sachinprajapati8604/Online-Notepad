@@ -21,7 +21,7 @@ function saveNotes() {
 
     }
 
-    
+
     // console.log(text_content);
 
 }
@@ -76,6 +76,15 @@ function deleteNotes() {
     }
 
 }
+
+
+const handleCopy = () => {
+    let text = document.getElementById('textarea');
+    text.select();
+    navigator.clipboard.writeText(text.value);
+    swal("text copied")
+}
+
 
 function changeMode() {
     let parent = document.getElementById('container');
