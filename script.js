@@ -89,18 +89,25 @@ const handleCopy = () => {
 function changeMode() {
     let parent = document.getElementById('container');
     let mode_icon = document.getElementById('mode-icon');
-    if (parent.className === 'container') {
+    let btn_box = document.getElementById('btn-box');
+    let textarea = document.getElementById('textarea');
+    if (parent.className === 'container') {  //for night mode
         parent.className = 'container night'
         document.body.style.background = '#202124';
         mode_icon.className = 'fas fa-moon'
         mode_icon.style.background = '#00002c'
         mode_icon.style.color = '#fff'
-    } else {
+        btn_box.style.backgroundColor = "#535b6e";
+        textarea.style.backgroundColor = "#141f26";
+    } else {  //for light mode
         parent.className = 'container';
         document.body.style.background = '#fff';
         mode_icon.className = 'fas fa-sun'
         mode_icon.style.background = '#fff'
         mode_icon.style.color = '#000'
+        btn_box.style.backgroundColor = "#eef8ff";
+        textarea.style.backgroundColor = "#00002c";
+
     }
 }
 

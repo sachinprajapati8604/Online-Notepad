@@ -34,8 +34,8 @@
             <textarea rows="5" cols="50" id="textarea" placeholder="Write your notes here"></textarea>
         </div>
 
-        <div class="btn-box">
-            <input  type="button" onclick="saveNotes()" value="Save" />
+        <div class="btn-box" id="btn-box">
+            <input type="button" onclick="saveNotes()" value="Save" />
             <input type="button" onclick="getNotes()" value="get Notes" />
             <input type="button" onclick="reset()" value="reset" />
             <input type="button" onclick="deleteNotes()" value="delete notes" />
@@ -44,8 +44,8 @@
 
         <div id="output-box">
             <h3 class="output-heading">Previous saved note</h3>
-            
-            <p id="result" ></p>
+
+            <p id="result"></p>
         </div>
     </div>
 
